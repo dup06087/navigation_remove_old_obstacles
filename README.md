@@ -12,7 +12,7 @@ and
 
 At obstacle_layer.cpp in line 78, last_update_times_.resize(200 * 200 , ros::Time::now()); // 각 셀의 마지막 업데이트 시간 초기화
 
-change 200 * 200 to your own value, last_update_times_.resize(map_size_in_meters * resolution, map_size_in_meters * resolution, ros::Time::now());
+change 200 * 200 to your own value, last_update_times_.resize(map_size_in_meters / resolution, map_size_in_meters / resolution, ros::Time::now());
 
 map_size_in_meters, resolution are in yaml files.
 
